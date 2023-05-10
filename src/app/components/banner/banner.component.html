@@ -1,0 +1,6 @@
+<div class="row" *ngIf="persona" class="img-fluid" [ngStyle]="{ 'background-image': 'url(' + persona.banner + ')'}">
+
+    <div *ngIf="persona" class="titulo">
+        <h2>Hola, soy {{persona.nombre}}. Bienvenidos a mi portfolio!</h2>
+    </div>
+</div>

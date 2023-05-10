@@ -1,0 +1,48 @@
+.row {
+    color: #92B588;
+    padding: 2%;
+}
+
+.titulo{
+    display: inline-flex;
+    justify-content: space-between;
+}
+
+.agregar{
+    color: #c1e2b8;
+    border: 2px solid #596e53;
+    border-radius: 70%;
+    box-shadow: 5px 5px 20px #596e53;
+}
+
+.contenedor{
+    display: flex;
+}
+
+.botones{
+    display: flex;
+    margin-left: 3%;
+}
+
+.chicos {
+    width: 80%;
+    border: 2px solid #596e53;
+    color: #c1e2b8;
+    margin-left: 3%;
+    box-shadow: 5px 5px 20px #596e53;
+}
+
+#MyModal{
+    background-color: #596e53 !important;
+    border-color: #384b33;
+    color: 596e53;
+}
+
+input, textarea {
+    background-color: #596e53 !important;
+    border: 1px solid #384b33 !important;
+}
+
+.btn-modal {
+    color: #c1e2b8;
+}

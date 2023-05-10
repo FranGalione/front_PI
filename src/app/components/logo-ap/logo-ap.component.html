@@ -1,0 +1,75 @@
+<div class="row">
+    <div class="container">
+        <div class="logo">
+            <img src="../../../assets/APlogo.png" id="logoAP" class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+        </div>
+        <div class="redes">
+            <div *ngIf="persona">
+                <a href={{persona.github}} target="_blank"><img src="../../../assets/github.png" class="img-social"></a>
+                <a href={{persona.linkedIn}} target="_blank"><img src="../../../assets/linkedin.png"
+                        class="img-social"></a>
+
+                <div class="botones" *ngIf="!isloged()">
+                    <button type="button" class="usuario btn btn-outline-success" data-bs-toggle="modal"
+                        data-bs-target="#myModal" class="nav-link active" class="btn tooltips" data-placement="top"
+                        data-toggle="tooltip" data-original-title="Edit"><i class="bi bi-person-fill"></i></button>
+
+                </div>
+                <div class="botones"*ngIf="isloged()">
+                    <button type="button" class="usuario btn btn-outline-success" (click)="handleClear()"
+                    (click)="autenticacionService.logoutUser()" class="nav-link active" class="btn tooltips"><i
+                        class="bi bi-x-circle-fill"></i></button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Login modal-->
+<div class="modal fade bd-example-modal-lg" id="myModal">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content" style="border-radius: 20px">
+            <div class="modal-header" id="myModal">
+                <h5 class="modal-title">Login</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body" id="myModal">
+                <form [formGroup]="form" class="m-5" (ngSubmit)="onEnviar($event)">
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Email</label>
+                        <input formControlName="email" [ngClass]="{
+                    'is-invalid': Email?.errors && Email?.touched,
+                    'is-valid': !Email?.errors && Email?.touched
+                }" type="email" class="form-control" id="exampleFormControlInput1" placeholder="email"
+                            autocomplete="off" required />
+                        <div *ngIf="Email?.errors && Email?.touched">
+                            <p *ngIf="Email?.hasError('required')" class="text-danger">
+                                El email es requerido
+                            </p>
+                            <p *ngIf="Email?.hasError('email')" class="text-danger">
+                                El formato del email debe ser valido
+                            </p>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleInputPassword1" class="form-label">Contraseña</label>
+                        <input [ngClass]="{
+                    'is-invalid': Password?.errors && Password?.touched,
+                    'is-valid': !Password?.errors && Password?.touched
+                }" formControlName="password" type="password" class="form-control" id="exampleInputPassword1"
+                            placeholder="password" autocomplete="off" required />
+                        <div *ngIf="Password?.errors && Password?.touched">
+                            <p *ngIf="Password?.hasError('required')" style="color: black" class="text-danger">
+                                El password es requerido
+                            </p>
+                        </div>
+                    </div>
+                    <button id="btnCerrar" type="submit" class="btn-modal btn btn-outline-success" data-bs-dismiss="modal">
+                        Enviar
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

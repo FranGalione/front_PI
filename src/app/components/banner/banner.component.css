@@ -1,0 +1,41 @@
+
+.img-fluid {
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    z-index: 2;
+}
+
+.titulo {
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    left: 5%;
+}
+
+h2 {
+    font-family: monospace;
+    color: rgb(5, 34, 4);
+    border-right: 2px solid rgb(5, 34, 4);
+    animation: cursor .5s infinite, 
+        escribiendo 6s steps(60,end);
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+@keyframes cursor {
+    0% {border-color: transparent;}
+    50% {border-color: rgb(5, 34, 4);}
+}
+@keyframes escribiendo {
+    from {width: 0;}
+    to{width: 100%;}
+}
+
+@media (max-width: 57.5em) {
+    .titulo {
+        display: block;
+        width: 350px;
+    }
+
+}

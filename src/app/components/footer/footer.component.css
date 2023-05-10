@@ -1,0 +1,14 @@
+.row{
+    background: rgb(27,65,26);
+    background: radial-gradient(circle, rgba(27,65,26,1) 0%, rgba(4,36,0,1) 100%);
+}
+
+footer{
+    padding: 1%;
+    color: #92B588;
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    text-shadow: 5px 5px 2px rgb(12, 12, 12);
+}

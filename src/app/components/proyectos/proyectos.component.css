@@ -1,0 +1,70 @@
+.row{
+    padding: 3%;
+    color: #92B588;
+}
+
+.titulo{
+    display: inline-flex;
+    justify-content: space-between;
+}
+
+.agregar{
+    color: #c1e2b8;
+    border: 2px solid #596e53;
+    border-radius: 70%;
+    box-shadow: 5px 5px 20px #596e53;
+}
+
+.botones{
+    display: inline-flex;
+    justify-content: center;
+    width: 35%;
+    margin: 2%;
+}
+
+#editables {
+    border: 2px solid #596e53;
+    color: #c1e2b8;
+    box-shadow: 5px 5px 20px #596e53;
+    margin: 1%;
+}
+
+.contenedor{
+    margin-top: 3%;
+}
+
+
+.card {
+    margin-top: 2%;
+    background-color: transparent;
+    color: #92B588;
+    border: 3px solid #92B588;
+    border-radius: 3%;
+}
+
+.card-img-top{
+    padding: 3%;
+    width: 100%;
+    border-radius: 10%;
+}
+
+.card-btn {
+    width: 100%;
+    margin-bottom: 3%;
+    color: #c1e2b8;
+}
+
+#MyModal{
+    background-color: #596e53 !important;
+    border-color: #384b33;
+    color: 596e53;
+}
+
+input, textarea {
+    background-color: #596e53 !important;
+    border: 1px solid #384b33 !important;
+}
+
+.btn-modal {
+    color: #c1e2b8;
+}

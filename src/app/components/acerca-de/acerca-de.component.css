@@ -1,0 +1,75 @@
+.row{
+    background: rgb(27,65,26);
+    background: radial-gradient(circle, rgba(27,65,26,1) 0%, rgba(4,36,0,1) 100%);
+}
+
+div{
+    color: #92B588;
+}
+
+.col-xs-12.col-sm-3.col-md-3.col-lg-3.columna #nombre, 
+.col-xs-12.col-sm-3.col-md-3.col-lg-3.columna #titulo{
+    display: flex;
+    justify-content: center;
+}
+.col-xs-12.col-sm-3.col-md-3.col-lg-3.columna #titulo{
+    font-style: italic;
+}
+.img-fluid{
+    margin-top: 3%;
+    width: 15rem;
+    border-radius: 150px;
+    box-shadow: 3px 3px 15px   #265a24;
+    display: block;
+    justify-content: center;
+}
+.acerca {
+    padding: 30px;
+}
+
+@media (max-width: 57.5em){
+    .col-xs-12.col-sm-6.col-md-6.col-lg-6.columna #acercaDeMi{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+    p{
+        text-align: center;
+    }
+}
+
+.btn-success{
+    color: #c1e2b8;
+}
+
+/* etiqueta nombre */
+#nombre{
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+/* etiqueta de titulo profesional */
+#titulo{
+    font-size: 1.5rem;
+}
+
+/* etiqueta de titulo "Acerca de mi"*/
+#acercaDeMi{
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+#MyModal{
+    background-color: #596e53 !important;
+    border-color: #384b33;
+    color: 596e53;
+}
+
+input, textarea {
+    background-color: #596e53 !important;
+    border: 1px solid #384b33 !important;
+}
+
+.btn-modal {
+    color: #c1e2b8;
+}

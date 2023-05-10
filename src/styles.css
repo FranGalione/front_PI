@@ -1,1 +1,7 @@
-/* You can add global styles to this file, and also import other style files */
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css");
+body{
+    margin: 0;
+    overflow-x: hidden;
+    background: rgb(93,129,87);
+    background: radial-gradient(circle, rgba(93,129,87,1) 0%, rgba(27,65,26,1) 45%, rgba(4,36,0,1) 100%);
+}
